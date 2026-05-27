@@ -9,7 +9,7 @@ Production-ready backend starter kit for Node.js (18+) and Express. It provides 
 ## Installation
 
 ```bash
-npm install node-backend-starter
+npm install @nitinkumar16/node-backend-starter
 ```
 
 TypeScript declarations are included out of the box.
@@ -29,7 +29,7 @@ import {
   errorHandler,
   sendSuccess,
   signAccessToken,
-} from "node-backend-starter";
+} from "@nitinkumar16/node-backend-starter";
 
 const config = loadConfig({
   overrides: {
@@ -58,7 +58,7 @@ app.use(errorHandler);
 ## Middleware usage
 
 ```js
-import { authenticate, authorizeRoles } from "node-backend-starter";
+import { authenticate, authorizeRoles } from "@nitinkumar16/node-backend-starter";
 
 app.get(
   "/account",
@@ -77,7 +77,7 @@ app.get(
 ## Authentication
 
 ```js
-import { signAccessToken, signRefreshToken, verifyToken } from "node-backend-starter";
+import { signAccessToken, signRefreshToken, verifyToken } from "@nitinkumar16/node-backend-starter";
 
 const accessToken = signAccessToken(
   { sub: "user-123" },
@@ -94,7 +94,7 @@ const payload = verifyToken(accessToken, { secret: "access-secret", expectedType
 
 ```js
 import { z } from "zod";
-import { validate } from "node-backend-starter";
+import { validate } from "@nitinkumar16/node-backend-starter";
 
 const createUserSchema = z.object({
   email: z.string().email(),
@@ -109,7 +109,7 @@ app.post("/users", validate({ body: createUserSchema }), (req, res) => {
 ## Plugin system
 
 ```js
-import { createPluginSystem } from "node-backend-starter";
+import { createPluginSystem } from "@nitinkumar16/node-backend-starter";
 
 const plugins = createPluginSystem();
 
@@ -131,7 +131,7 @@ import {
   createXssClean,
   securityHeaders,
   ipFilter,
-} from "node-backend-starter";
+} from "@nitinkumar16/node-backend-starter";
 
 app.use(securityHeaders());
 app.use(createHelmet());
@@ -145,7 +145,7 @@ app.use(createCsrf({ cookie: true }));
 ## Standardized responses
 
 ```js
-import { sendSuccess, sendError } from "node-backend-starter";
+import { sendSuccess, sendError } from "@nitinkumar16/node-backend-starter";
 
 app.get("/status", (req, res) => sendSuccess(res, { data: { status: "ok" } }));
 app.use((req, res) => sendError(res, { statusCode: 404, message: "Not found" }));
