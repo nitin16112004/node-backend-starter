@@ -1,6 +1,6 @@
 {
     "name": "@nitinkumar16/node-backend-starter",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Production-ready Node.js/Express backend starter kit with auth, security, validation, and config.",
     "author": "Nitin Kumar <nitinkumar16072005@gmail.com>",
     "type": "module",
