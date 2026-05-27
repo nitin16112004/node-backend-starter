@@ -20,6 +20,8 @@ module.exports = {
         "!src/index.js",
     ],
 
+    coverageReporters: ["text", "lcov", "clover"],
+
     clearMocks: true,
 
     verbose: true,
