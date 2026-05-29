@@ -1,7 +1,7 @@
 # backendkit
 
 [![CI](https://github.com/nitin16112004/backendkit/actions/workflows/ci.yml/badge.svg)](https://github.com/nitin16112004/backendkit/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/backendkit)](https://www.npmjs.com/package/backendkit)
+[![npm](https://img.shields.io/npm/v/@nitinkumar16/backendkit)](https://www.npmjs.com/package/@nitinkumar16/backendkit)
 [![License](https://img.shields.io/github/license/nitin16112004/backendkit)](LICENSE)
 
 Production-ready backend starter kit for Node.js (18+) and Express. It provides JWT authentication, role-based authorization, validation, configuration management, security middleware, logging, plugins, and standardized error handling.
